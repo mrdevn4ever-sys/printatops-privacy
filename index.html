@@ -200,7 +200,23 @@
 
 <h3>Ausmalseiten und Druck</h3>
 
-<p>Beim Anzeigen und Drucken einer Ausmalseite ruft die App die zugehörige Datei von unserem Server ab. Dabei fallen technisch bedingt die üblichen Verbindungsdaten an, insbesondere IP-Adresse, Zeitpunkt und angeforderte Datei. Diese Daten fallen bei unserem Hosting-Anbieter an und werden von uns nicht zu Profilen zusammengeführt.</p>
+<p>Beim Drucken einer Ausmalseite fragt die App die zugehörige
+Druckdatei bei unserem Server an. Übermittelt werden dabei die
+Kennung der gewünschten Seite, das Papierformat und die
+eingestellte Sprache. Der Server prüft, ob die Seite freigegeben
+ist, und schickt einen Downloadlink zurück, der nach fünf Minuten
+verfällt.</p>
+
+<p>Zum Schutz vor Missbrauch bilden wir dabei — wie beim
+Feedback-Formular — einen Hashwert aus der IP-Adresse deines
+Geräts und speichern ihn zusammen mit einem Zeitfenster. Die
+IP-Adresse selbst speichern wir nicht. <strong>Welche Seite du
+druckst, wird nicht gespeichert.</strong></p>
+
+<p><strong>Rechtsgrundlage:</strong> Bereitstellung der von dir
+angeforderten Funktion (Art. 6 Abs. 1 lit. b DSGVO) sowie unser
+berechtigtes Interesse an einem missbrauchssicheren Dienst
+(Art. 6 Abs. 1 lit. f DSGVO).</p>
 
 <h3>Keine Nutzungsstatistik</h3>
 
