@@ -140,7 +140,7 @@
 <header>
   <p class="eyebrow">Printatops · com.puredevn.printatops</p>
   <h1>Datenschutz &amp; Impressum</h1>
-  <p class="meta">Fassung 1.0 · Stand: [[DATUM DER VERÖFFENTLICHUNG]]</p>
+  <p class="meta">Fassung 1.0 · Stand: 27. Juli 2026</p>
 </header>
 
 <div class="lede">
@@ -202,10 +202,6 @@
 
 <p>Beim Anzeigen und Drucken einer Ausmalseite ruft die App die zugehörige Datei von unserem Server ab. Dabei fallen technisch bedingt die üblichen Verbindungsdaten an, insbesondere IP-Adresse, Zeitpunkt und angeforderte Datei. Diese Daten fallen bei unserem Hosting-Anbieter an und werden von uns nicht zu Profilen zusammengeführt.</p>
 
-<div class="todo">
-  ZU PRÜFEN: Was genau verarbeitet die Edge Function „print-asset“ und wie lange werden die Server-Logs bei Supabase aufbewahrt? Vor Veröffentlichung ergänzen.
-</div>
-
 <h3>Keine Nutzungsstatistik</h3>
 
 <p>Frühere Versionen der App haben anonymisierte Nutzungsereignisse erfasst. Diese Funktion wurde vollständig entfernt, die zugehörigen Daten wurden gelöscht. Printatops erfasst keine Statistiken darüber, welche Seiten du ansiehst, druckst oder als Favorit speicherst.</p>
@@ -227,10 +223,6 @@
 
 <p>Google ist für diese Verarbeitung eigenverantwortlich. Einzelheiten stehen in der <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
-<div class="todo">
-  ZU PRÜFEN: Dieser Abschnitt beschreibt den Zustand MIT eingebautem Einwilligungsdialog (Google UMP). Die Seite erst veröffentlichen, wenn die App-Version mit dem Dialog live ist — sonst beschreibt die Erklärung etwas, das es noch nicht gibt.
-</div>
-
 <h3>Einwilligung im Europäischen Wirtschaftsraum, in der Schweiz und im Vereinigten Königreich</h3>
 
 <p>Bevor Werbung geladen wird, zeigt dir die App einen Dialog von Google, in dem du über die Datenverarbeitung informiert wirst und entscheiden kannst. Deine Entscheidung wird auf dem Gerät gespeichert. Wenn du nicht zustimmst, wird eingeschränkte Werbung ohne Zugriff auf Gerätekennungen ausgeliefert. Du kannst deine Entscheidung in den Einstellungen der App jederzeit ändern.</p>
@@ -248,7 +240,7 @@
   <tr>
     <td>Supabase</td>
     <td>Hosting, Datenbank, Dateiablage, Serverfunktionen</td>
-    <td>[[SUPABASE-REGION EINTRAGEN]]</td>
+    <td>EU West (Irland), eu-west-1</td>
   </tr>
   <tr>
     <td>Google (AdMob, Google Play)</td>
@@ -259,23 +251,15 @@
 
 <p>Bei einer Übermittlung in Länder ausserhalb der Schweiz und des Europäischen Wirtschaftsraums stützen wir uns auf die Standardvertragsklauseln der Europäischen Kommission sowie auf die Angemessenheitsbeschlüsse, soweit sie für das jeweilige Land bestehen.</p>
 
-<div class="todo">
-  ZU PRÜFEN: In welcher Region liegt das Supabase-Projekt? Steht im Supabase-Dashboard unter Project Settings → General. Vor Veröffentlichung eintragen.
-</div>
-
 <h2>7. Wie lange wir Daten aufbewahren</h2>
 
 <table>
   <tr><th>Daten</th><th>Dauer</th></tr>
   <tr><td>Angaben auf deinem Gerät</td><td>bis du sie änderst oder die App löschst</td></tr>
-  <tr><td>Feedback-Nachrichten</td><td>[[AUFBEWAHRUNGSDAUER FESTLEGEN, VORSCHLAG: 24 MONATE]]</td></tr>
-  <tr><td>Hashwerte zum Missbrauchsschutz</td><td>[[DAUER FESTLEGEN, VORSCHLAG: 30 TAGE]]</td></tr>
-  <tr><td>Server-Logs beim Hosting-Anbieter</td><td>[[DAUER LAUT SUPABASE EINTRAGEN]]</td></tr>
+  <tr><td>Feedback-Nachrichten</td><td>24 Monate</td></tr>
+  <tr><td>Hashwerte zum Missbrauchsschutz</td><td>30 Tage</td></tr>
+  <tr><td>Server-Logs beim Hosting-Anbieter</td><td>1 Tag (Supabase Free Plan)</td></tr>
 </table>
-
-<div class="todo">
-  WICHTIG: Nenne hier nur Fristen, die tatsächlich technisch umgesetzt sind. Genau an dieser Stelle ist die frühere Fassung durchgefallen — sie versprach eine Löschung nach zwölf Monaten, die es nie gab.
-</div>
 
 <h2>8. Deine Rechte</h2>
 
