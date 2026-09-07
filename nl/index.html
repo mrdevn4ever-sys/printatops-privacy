@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Privacybeleid &amp; Wettelijke Kennisgeving — Printatops</title>
+<meta content="Privacybeleid en wettelijke kennisgeving voor de Printatops-app (com.puredevn.printatops)." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --ink:#16202A;
+    --muted:#5A6B78;
+    --paper:#FFFFFF;
+    --surface:#F0F3F5;
+    --rule:#D9E1E6;
+    --accent:#2C6E7F;
+    --accent-soft:#E4EFF2;
+    --sheet-max:44rem;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--surface);
+    color:var(--ink);
+    font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  .sheet{
+    max-width:var(--sheet-max);
+    margin:0 auto;
+    background:var(--paper);
+    padding:clamp(1.75rem,5vw,4rem) clamp(1.25rem,5vw,3.5rem) 4rem;
+    min-height:100vh;
+    box-shadow:0 0 0 1px var(--rule);
+  }
+  header{border-bottom:2px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2rem;}
+  .eyebrow{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:.75rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 .6rem;
+  }
+  h1{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:clamp(1.9rem,6vw,2.7rem);
+    line-height:1.1;
+    margin:0 0 .75rem;
+    letter-spacing:-.01em;
+  }
+  .meta{font-size:.95rem;color:var(--muted);margin:0;}
+  .lang{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-size:.85rem;
+    margin:.75rem 0 0;
+  }
+  h2{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:1.3rem;
+    line-height:1.25;
+    margin:2.75rem 0 .85rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+  }
+  h2:first-of-type{border-top:none;padding-top:0;}
+  h3{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:500;
+    font-size:1.02rem;
+    margin:1.6rem 0 .5rem;
+  }
+  p{margin:0 0 1rem;}
+  ul{margin:0 0 1rem;padding-left:1.15rem;}
+  li{margin-bottom:.55rem;}
+  a{color:var(--accent);}
+  strong{font-weight:600;}
+  .lede{
+    background:var(--accent-soft);
+    border-left:4px solid var(--accent);
+    padding:1.15rem 1.25rem;
+    margin:0 0 2rem;
+  }
+  .lede p:last-child{margin-bottom:0;}
+  .addr{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:500;
+    font-style:normal;
+    line-height:1.55;
+    background:var(--surface);
+    padding:1rem 1.25rem;
+    margin:0 0 1rem;
+  }
+  table{border-collapse:collapse;width:100%;margin:0 0 1.25rem;font-size:.95rem;}
+  th,td{text-align:left;vertical-align:top;padding:.6rem .7rem;border-bottom:1px solid var(--rule);}
+  th{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:.78rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  footer{margin-top:3.5rem;padding-top:1.5rem;border-top:2px solid var(--ink);font-size:.9rem;color:var(--muted);}
+  .print-hint{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-size:.85rem;
+    background:none;
+    border:1px solid var(--rule);
+    color:var(--muted);
+    padding:.5rem .9rem;
+    cursor:pointer;
+    margin-top:1rem;
+  }
+  .print-hint:hover{border-color:var(--accent);color:var(--accent);}
+  .print-hint:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+  @media print{
+    body{background:#fff;font-size:11pt;}
+    .sheet{box-shadow:none;max-width:none;padding:0;}
+    .print-hint,.lang{display:none;}
+    h2{page-break-after:avoid;}
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+<header>
+<p class="eyebrow">Printatops · com.puredevn.printatops</p>
+<h1>Privacybeleid &amp; Wettelijke Kennisgeving</h1>
+<p class="meta">Gepubliceerd: 7 september 2026</p>
+<p class="lang"><a href="../">Deutsche Fassung</a></p>
+</header>
+<div class="lede">
+<p><strong>Kort samengevat:</strong> Printatops heeft geen account en geen aanmelding nodig. Favorieten en instellingen worden lokaal opgeslagen; het aanbieden van de catalogus, zoekfunctie, favorieten en afdrukken omvat ook het verzenden van informatie naar onze Supabase-service. Optionele feedback en misbruikbeschermingswaarden worden op de server opgeslagen. Google verwerkt apparaat- en netwerkgegevens voor toestemmingscontroles en reclame. Volwassenen die toestemming geven kunnen gepersonaliseerde advertenties ontvangen; kinderen en personen van wie de leeftijd onbekend is niet.</p>
+</div>
+<h2>1. Wie verantwoordelijk is</h2>
+<p>Verantwoordelijke voor de gegevensverwerking en aanbieder van de app:</p>
+<address class="addr">
+  Michael Spiess<br/>
+  Riedmattstrasse 1<br/>
+  6030 Ebikon<br/>
+  Switzerland<br/><br/>
+  Email: <a href="mailto:puredevn.io@gmail.com">puredevn.io@gmail.com</a>
+</address>
+<p>Printatops wordt geëxploiteerd als eenmanszaak onder de naam “PureDevn Studio”. Voor elke privacyvraag en om uw rechten uit te oefenen, volstaat een e-mail naar het bovenstaande adres.</p>
+<h2>2. Lokale opslag en noodzakelijke verzending</h2>
+<p>De app slaat de volgende informatie lokaal op. Lokale opslag betekent niet dat alle verwerking op het apparaat blijft: favoriete-identificatoren worden naar Supabase gestuurd om de bijbehorende inhoud op te halen, de taal wordt verzonden voor de catalogus, zoekfunctie, feedback en afdrukken, en het papierformaat wordt verzonden bij het afdrukken.</p>
+<ul>
+<li>uw opgeslagen favorieten</li>
+<li>de geselecteerde taal van de app</li>
+<li>het geselecteerde papierformaat</li>
+<li>een afdrukteller en het tijdstip van de laatste advertentieweergave om de advertentiefrequentie te regelen</li>
+<li>of u de advertentievrije versie heeft aangeschaft</li>
+<li>de afgeleide leeftijdsstatus (kind, volwassene of onbekend), niet het ingevoerde geboortejaar</li>
+</ul>
+<p>Voorbeeldafbeeldingen worden ook in het geheugen en op schijf gecached. Het verwijderen van lokale app-gegevens verwijdert geen al verzonden feedbackberichten of gegevens die worden bewaard door de services die in dit beleid worden genoemd.</p>
+<h2>3. Wat naar ons wordt verzonden</h2>
+<h3>Feedback</h3>
+<p>Als u via het feedbackformulier contact met ons opneemt, verwerken we:</p>
+<ul>
+<li>de inhoud van uw bericht</li>
+<li>het type feedback (feedback of functieverzoek)</li>
+<li>de in de app ingestelde taal</li>
+<li>de verwerkingsstatus</li>
+</ul>
+<p>Wat u in het tekstveld typt, is aan u. We vragen u uitdrukkelijk geen namen, adressen of e-mailadressen in te voeren — noch van uzelf noch van anderen. Voor het formulier staat een eenvoudige rekensom zodat kinderen niet per ongeluk iets verzenden.</p>
+<p><strong>Rechtsgrondslag:</strong> uw toestemming, gegeven door het formulier te verzenden (art. 6 lid 1 sub a AVG). U kunt die toestemming te allen tijde per e-mail intrekken; we verwijderen uw bericht dan voor zover we het kunnen identificeren.</p>
+<h3>Misbruikbescherming</h3>
+<p>Om het formulier tegen misbruik te beschermen, leiden we een cryptografische hash af van het IP-adres met behulp van een geheime aanvullende waarde en slaan deze op met een tijdvenster en een aanvraagteller. Deze applicatierecords slaan de hash op in plaats van het ruwe IP-adres. Hostingdiensten kunnen IP-adressen en technische aanvraaginformatie afzonderlijk verwerken in hun logboeken. De hash is pseudoniem, niet anoniem.</p>
+<p><strong>Rechtsgrondslag:</strong> ons gerechtvaardigd belang bij een goed functionerende service die bestand is tegen misbruik (art. 6 lid 1 sub f AVG).</p>
+<h3>Kleurplaten en afdrukken</h3>
+<p>De app stuurt ook verzoeken naar Supabase bij het laden van de catalogus, zoeken en filteren, ophalen van opgeslagen favorieten en downloaden van afbeeldingen. Afhankelijk van de functie omvatten deze zoekopdrachttekst, filters, taal, pagina- of favoriete-identificatoren en technische netwerkgegevens. Deze verzoeken leveren de gevraagde inhoud.</p>
+<p>Wanneer u een kleurplaat afdrukt, vraagt de app het bijbehorende afdrukbestand op bij onze server. Wat wordt verzonden is de identificator van de gevraagde pagina, het papierformaat en de taalinstelling. De server controleert of de pagina gepubliceerd is en geeft een downloadlink terug die na vijf minuten vervalt.</p>
+<p>Misbruikbescherming voor afdrukken slaat een hash op die is afgeleid van het IP-adres, een tijdvenster en een aanvraagteller. Dit is geen speciale afdrukgeschiedenis met pagina-identificatoren. De gevraagde pagina-identificator wordt echter naar de server gestuurd; technische verzoek- en hostinglogboeken en lokale voorbeeldcaches zijn door dat onderscheid niet uitgesloten.</p>
+<p><strong>Rechtsgrondslag:</strong> het uitvoeren van de door u gevraagde functie (art. 6 lid 1 sub b AVG) en ons gerechtvaardigd belang bij een service die bestand is tegen misbruik (art. 6 lid 1 sub f AVG).</p>
+<h3>Geen gebruiksanalytics</h3>
+<p>De voormalige eerste-partij gebruikseventfunctie is verwijderd. Dit betekent niet dat er geen gebruiksgegevens worden verwerkt: er zijn lokale voorbeeldcaches en een afdrukteller voor advertentiefrequentie, noodzakelijke inhoudsverzoeken en de hieronder beschreven Google-verwerking.</p>
+<h2>4. Reclame</h2>
+<p>Printatops toont advertenties van Google AdMob, doorgaans na een geslaagde afdruk. U kunt de advertentievrije versie eenmalig aanschaffen.</p>
+<p>Kinderen, personen van wie de leeftijd onbekend is en volwassenen zonder positieve toestemming voor personalisatie ontvangen <strong>niet-gepersonaliseerde advertenties</strong> — of geen advertenties als de toestemmingscontrole dit niet toestaat. <strong>Volwassenen die toestemming geven kunnen gepersonaliseerde advertenties ontvangen.</strong> De app staat dit alleen toe bij een volwassen leeftijdsstatus en een positieve door Google verstrekte toestemmingscontrole, inclusief de vereiste doel- en Google-leverancierstoestemmingen. Ontbrekende of onleesbare toestemmingsgegevens staan personalisatie niet toe. Voor kinderen en onbekende leeftijd stelt de app de Google SDK-vlaggen voor kindergerichte content en gebruikers onder de toestemmingsleeftijd in; voor volwassenen doet de app dat niet. De maximale advertentie-inhoudsclassificatie blijft voor iedereen <strong>G (geschikt voor alle leeftijden)</strong>.</p>
+<p>Niet-gepersonaliseerde reclame is niet gegevensvrij. Google verwerkt apparaat- en netwerkgegevens voor toestemmingscontroles, reclame, boekhouding, diagnostiek en beveiliging; met de relevante toestemming kan de verwerking ook advertentiepersonalisatie omvatten. Volgens Google omvatten de mogelijk relevante gegevenstypen:</p>
+<ul>
+<li>het IP-adres, onder meer voor bij benadering locatiebepaling</li>
+<li>apparaat- en app-identificatoren, mogelijk inclusief reclame-identificatoren zoals de Android Advertising ID (AAID)</li>
+<li>interacties met de advertentie, zoals weergaven en klikken</li>
+<li>diagnostische gegevens en foutgegevens</li>
+</ul>
+<p>Google is hiervoor zelfstandig verantwoordelijk. Details staan in <a href="https://policies.google.com/privacy" rel="noopener">het privacybeleid van Google</a>.</p>
+<h3>Toestemming in de EER, Zwitserland en het Verenigd Koninkrijk</h3>
+<p>Voordat advertenties worden geladen, gebruikt de app Google UMP om te controleren of advertentieverzoeken zijn toegestaan en toont een toestemmingsformulier afhankelijk van de leeftijdsstatus en het UMP-resultaat. De toestemmingskeuze wordt lokaal opgeslagen en gebruikt door de Google SDK’s. De toestemmingscontrole zelf stuurt technische gegevens naar Google; inhoudsverzoeken aan Supabase kunnen ook plaatsvinden na het leeftijdsscherm en vóór de toestemming voor reclame. Afwijzing is geen garantie dat er geen apparaat- of andere identificatoren worden verwerkt. Zonder toestemming van de toestemmingscontrole laadt de app geen advertenties. Volwassenen kunnen privacyopties voor reclame opnieuw openen in de instellingen wanneer Google UMP dat toegangspunt vereist; dit toegangspunt voor volwassenen wordt niet aangeboden voor kinderen of onbekende leeftijd.</p>
+<p><strong>Rechtsgrondslag:</strong> uw toestemming (art. 6 lid 1 sub a AVG) wanneer toegang wordt verkregen tot uw apparaat; anders ons gerechtvaardigd belang bij de financiering van de gratis app (art. 6 lid 1 sub f AVG).</p>
+<h2>5. Aankopen</h2>
+<p>De eenmalige aankoop van de advertentievrije versie verloopt via Google Play. De app verwerkt product-, aankoop- en transactie-informatie en slaat de aankoopstatus lokaal op; de app verzamelt geen betalingsgegevens via een eigen betalingsformulier. Een rekensom vóór de aankoop is een extra drempel, geen geverifieerde ouderlijke toestemming. De voorwaarden en het privacybeleid van Google Play zijn van toepassing op de betalingsverwerking.</p>
+<h2>6. Ontvangers en internationale doorgiften</h2>
+<table>
+<tr><th>Ontvanger</th><th>Doel</th><th>Locatie van verwerking</th></tr>
+<tr>
+<td>Supabase</td>
+<td>Hosting, database, bestandsopslag, serverfuncties</td>
+<td>eu-west-1 (Ierland, EU)</td>
+</tr>
+<tr>
+<td>Google (AdMob, Google Play)</td>
+<td>Toestemmingscontroles, reclame inclusief mogelijke personalisatie voor toestemmende volwassenen, betalingsverwerking</td>
+<td>Verenigde Staten en andere landen</td>
+</tr>
+</table>
+<p>Wanneer gegevens worden doorgegeven aan landen buiten Zwitserland en de Europese Economische Ruimte, baseren we ons op de standaardcontractbepalingen van de Europese Commissie en op adequaatheidsbesluiten waar die bestaan voor het betrokken land.</p>
+<h2>7. Hoe lang we gegevens bewaren</h2>
+<table>
+<tr><th>Gegevens</th><th>Bewaartermijn</th></tr>
+<tr><td>Informatie in lokale appopslag</td><td>totdat daar wijzigingen zijn aangebracht of het is verwijderd; dit garandeert geen verwijdering van afzonderlijke back-ups of geëxporteerde bestanden</td></tr>
+<tr><td>Feedbackberichten</td><td>24 maanden (beoogde verwijderingstermijn)</td></tr>
+<tr><td>Misbruikbeschermingshashes</td><td>30 dagen (beoogde verwijderingstermijn)</td></tr>
+<tr><td>Serverlogboeken bij onze hostingprovider</td><td>afhankelijk van de hostingservice en -configuratie; er wordt hier geen alomvattende verwijderingstermijn van één dag bevestigd</td></tr>
+</table>
+<p>De beoogde termijnen van 24 maanden voor feedback en 30 dagen voor misbruikbeschermingswaarden betreffen applicatiedatabaserecords, niet afzonderlijke providerlogboeken.</p>
+<h2>8. Uw rechten</h2>
+<p>U heeft het recht op inzage, rectificatie, verwijdering, beperking van de verwerking en gegevensoverdraagbaarheid, alsook het recht om bezwaar te maken tegen verwerking. Waar u toestemming heeft gegeven, kunt u die te allen tijde intrekken met werking voor de toekomst.</p>
+<p>Omdat Printatops geen gebruikersaccount aanmaakt, kunnen we een verzoek niet automatisch aan een account koppelen. Dit betekent niet dat technische identificatoren of door u ingediende informatie geen koppeling mogelijk maken. Voor feedback kunnen het tijdstip bij benadering en de inhoud ons helpen het bericht te vinden.</p>
+<p>Voor elk verzoek volstaat een e-mail naar <a href="mailto:puredevn.io@gmail.com">puredevn.io@gmail.com</a>.</p>
+<h3>Toezichthoudende autoriteiten</h3>
+<ul>
+<li><strong>Zwitserland:</strong> Federale Gegevensbeschermings- en Informatiecommissaris (FDPIC), Bern</li>
+<li><strong>Europese Economische Ruimte:</strong> de gegevensbeschermingsautoriteit van uw land van verblijf</li>
+</ul>
+<h2>9. Kinderen</h2>
+<p>Printatops wordt gebruikt door kinderen en volwassenen. Bij de eerste start vraagt de app naar een geboortejaar; u kunt er ook voor kiezen dit niet op te geven. Het apparaat leidt een status kind, volwassene of onbekend af en slaat die op, niet het ingevoerde jaar. Dit is een zelfverklaring, geen identiteits- of leeftijdsverificatie. Jaargebaseerde classificatie is conservatief: leeftijden onder de 18 afgeleid van het opgegeven geboortejaar worden behandeld als kind; het jaar waarin iemand 18 wordt, wordt bij afwezigheid van maand en dag behandeld als onbekend. De status bepaalt de behandeling van reclame en toestemming, niet een andere inhoudscatalogus.</p>
+<p>Voor gebruikers in de Verenigde Staten is de Children’s Online Privacy Protection Act (COPPA) van toepassing. De app staat geen gepersonaliseerde advertenties toe voor kinderen of personen van wie de leeftijd onbekend is. Dit sluit technische gegevensverwerking door Supabase en Google voor inhoud, toestemmingscontroles, niet-gepersonaliseerde advertenties en beveiliging niet uit. Het feedbackformulier is beveiligd met een rekensom; dit is geen geverifieerde ouderlijke toestemming.</p>
+<p>Als u een ouder of voogd bent en denkt dat informatie over uw kind ons toch heeft bereikt, schrijf ons dan — we verwijderen het.</p>
+<h2>10. Wijzigingen in dit beleid</h2>
+<p>We werken dit beleid bij wanneer de app of de juridische situatie verandert. De op deze pagina gepubliceerde versie is de geldende versie. De datum van de huidige versie staat bovenaan.</p>
+<button class="print-hint" onclick="window.print()">Deze pagina afdrukken</button>
+<footer>
+<p>Printatops · com.puredevn.printatops · Michael Spiess, Ebikon (Zwitserland)</p>
+</footer>
+</main>
+</body>
+</html>

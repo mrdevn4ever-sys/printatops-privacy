@@ -135,12 +135,12 @@
 <header>
   <p class="eyebrow">Printatops · com.puredevn.printatops</p>
   <h1>Privacy Policy &amp; Legal Notice</h1>
-  <p class="meta">Version 1.0 · Last updated: 27 July 2026</p>
+  <p class="meta">Published: 7 September 2026</p>
   <p class="lang"><a href="../">Deutsche Fassung</a></p>
 </header>
 
 <div class="lede">
-  <p><strong>In short:</strong> Printatops needs no account and no sign-in. Your favourites and settings stay on your device. Data reaches us only if you actively send us feedback. In addition, ads are served by Google AdMob, which processes technical device and network data in the process.</p>
+  <p><strong>In short:</strong> Printatops needs no account and no sign-in. Favourites and settings are stored locally; providing the catalogue, search, favourites and printing also involves sending information to our Supabase service. Optional feedback and abuse-protection values are stored on the server. Google processes device and network data for consent checks and advertising. Adults who consent may receive personalised ads; children and people whose age is unknown do not.</p>
 </div>
 
 <h2>1. Who is responsible</h2>
@@ -157,19 +157,20 @@
 
 <p>Printatops is operated as a sole proprietorship under the name “PureDevn Studio”. For any privacy question and to exercise your rights, an email to the address above is enough.</p>
 
-<h2>2. What stays on your device</h2>
+<h2>2. Local storage and necessary transmission</h2>
 
-<p>The app stores the following only locally on your device. It is never sent to us and we cannot see it:</p>
+<p>The app stores the following information locally. Local storage does not mean that all processing stays on the device: favourite identifiers are sent to Supabase to retrieve their content, language is sent for the catalogue, search, feedback and printing, and the paper format is sent when printing.</p>
 
 <ul>
   <li>your saved favourites</li>
   <li>the selected app language</li>
   <li>the selected paper format</li>
-  <li>a counter for how often an ad has been shown</li>
+  <li>a print counter and the time of the last ad impression to control ad frequency</li>
   <li>whether you have purchased the ad-free version</li>
+  <li>the derived age status (child, adult or unknown), not the entered birth year</li>
 </ul>
 
-<p>If you delete the app, this information goes with it.</p>
+<p>Preview images are also cached in memory and on disk. Deleting local app data does not delete feedback messages already sent or data held by the services named in this policy.</p>
 
 <h2>3. What is sent to us</h2>
 
@@ -190,33 +191,35 @@
 
 <h3>Abuse protection</h3>
 
-<p>To stop the form from being abused at scale, we derive a cryptographic hash from your device’s IP address using a secret additional value, and store it together with a time window. We do not store the IP address itself. This hash is pseudonymous rather than anonymous, so we treat it as personal data.</p>
+<p>To protect the form against abuse, we derive a cryptographic hash from the IP address using a secret additional value and store it with a time window and request counter. These application records store the hash rather than the raw IP address. Hosting services may separately process IP addresses and technical request information in their logs. The hash is pseudonymous, not anonymous.</p>
 
 <p><strong>Legal basis:</strong> our legitimate interest in a functioning service that resists abuse (Art. 6(1)(f) GDPR).</p>
 
 <h3>Colouring pages and printing</h3>
 
+<p>The app also sends requests to Supabase when loading the catalogue, searching and filtering, retrieving saved favourites and downloading images. Depending on the function, these include search text, filters, language, page or favourite identifiers and technical network data. These requests provide the requested content.</p>
+
 <p>When you print a colouring page, the app requests the corresponding print file from our server. What is transmitted is the identifier of the requested page, the paper format and the language setting. The server checks whether the page is published and returns a download link that expires after five minutes.</p>
 
-<p>To protect against abuse we again derive a hash from your device’s IP address — as with the feedback form — and store it together with a time window. We do not store the IP address itself. <strong>Which page you print is not stored.</strong></p>
+<p>Abuse protection for printing stores a hash derived from the IP address, a time window and a request counter. This is not a dedicated print history containing page identifiers. However, the requested page identifier is sent to the server; technical request and hosting logs and local preview caches are not excluded by that distinction.</p>
 
 <p><strong>Legal basis:</strong> providing the function you requested (Art. 6(1)(b) GDPR) and our legitimate interest in a service that resists abuse (Art. 6(1)(f) GDPR).</p>
 
 <h3>No usage analytics</h3>
 
-<p>Earlier versions of the app recorded anonymised usage events. That feature has been removed entirely and the associated data has been deleted. Printatops keeps no statistics about which pages you view, print or save as favourites.</p>
+<p>The former first-party usage-event feature has been removed. This does not mean that no usage data is processed: there are local preview caches and a print counter for ad frequency, necessary content requests and the Google processing described below.</p>
 
 <h2>4. Advertising</h2>
 
 <p>Printatops shows ads from Google AdMob, usually after a successful print. You can buy the ad-free version once.</p>
 
-<p>We have configured AdMob so that only <strong>non-personalised ads</strong> are served, the app is flagged as <strong>child-directed</strong>, and only ads rated <strong>G (suitable for all ages)</strong> are allowed. No advertising profile is built about you.</p>
+<p>Children, people whose age is unknown and adults without positive consent to personalisation receive <strong>non-personalised ads</strong> — or no ads if the consent check does not allow them. <strong>Adults who consent may receive personalised ads.</strong> The app allows this only for an adult age status and a positive Google-provided consent check, including the required purpose and Google-vendor consents. Missing or unreadable consent data does not allow personalisation. For children and unknown age, the app sets the Google SDK child-directed and under-age-of-consent flags; for adults it does not. The maximum ad content rating remains <strong>G (suitable for all ages)</strong> for everyone.</p>
 
-<p>That does not mean no data is processed. According to Google, serving and accounting for ads involves in particular:</p>
+<p>Non-personalised advertising is not data-free. Google processes device and network data for consent checks, advertising, accounting, diagnostics and security; with the relevant consent, processing may also serve ad personalisation. According to Google, the potentially relevant data types include:</p>
 
 <ul>
   <li>the IP address, among other things for approximate location</li>
-  <li>device and app identifiers</li>
+  <li>device and app identifiers, potentially including advertising identifiers such as the Android Advertising ID (AAID)</li>
   <li>interactions with the ad, such as impressions and clicks</li>
   <li>diagnostic and error data</li>
 </ul>
@@ -225,13 +228,13 @@
 
 <h3>Consent in the EEA, Switzerland and the United Kingdom</h3>
 
-<p>Before ads are loaded, the app shows you a dialog from Google that informs you about the data processing and lets you decide. Your choice is stored on the device. If you do not consent, limited ads are served without access to device identifiers. You can change your choice at any time in the app settings.</p>
+<p>Before loading ads, the app uses Google UMP to check whether ad requests are allowed and shows a consent form depending on age status and the UMP result. The consent choice is stored locally and used by the Google SDKs. The consent check itself sends technical data to Google; content requests to Supabase may also occur after the age screen and before advertising consent. Rejection is not a guarantee that no device or other identifiers are processed. Without permission from the consent check, the app loads no ads. Adults can reopen advertising privacy options in settings when Google UMP requires that entry point; this adult entry point is not offered for children or unknown age.</p>
 
 <p><strong>Legal basis:</strong> your consent (Art. 6(1)(a) GDPR) where your device is accessed; otherwise our legitimate interest in funding the free app (Art. 6(1)(f) GDPR).</p>
 
 <h2>5. Purchases</h2>
 
-<p>The one-time purchase of the ad-free version is handled entirely by Google Play. We receive neither your payment details nor your name — the app only learns whether a valid purchase exists. An arithmetic question sits in front of the purchase so that children cannot buy anything without a parent. Google Play’s terms and privacy policy apply to the payment itself.</p>
+<p>The one-time purchase of the ad-free version is handled through Google Play. The app processes product, purchase and transaction information and stores purchase status locally; it does not collect payment details through its own payment form. An arithmetic question before purchase is an additional hurdle, not verified parental consent. Google Play’s terms and privacy policy apply to payment processing.</p>
 
 <h2>6. Recipients and international transfers</h2>
 
@@ -244,7 +247,7 @@
   </tr>
   <tr>
     <td>Google (AdMob, Google Play)</td>
-    <td>Advertising, payment processing</td>
+    <td>Consent checks, advertising including possible personalisation for consenting adults, payment processing</td>
     <td>United States and other countries</td>
   </tr>
 </table>
@@ -255,19 +258,19 @@
 
 <table>
   <tr><th>Data</th><th>Retention</th></tr>
-  <tr><td>Information on your device</td><td>until you change it or delete the app</td></tr>
-  <tr><td>Feedback messages</td><td>24 months</td></tr>
-  <tr><td>Abuse-protection hashes</td><td>30 days</td></tr>
-  <tr><td>Server logs at our hosting provider</td><td>1 day</td></tr>
+  <tr><td>Information in local app storage</td><td>until changed or deleted there; this does not guarantee deletion of separate backups or exported files</td></tr>
+  <tr><td>Feedback messages</td><td>24 months (intended deletion period)</td></tr>
+  <tr><td>Abuse-protection hashes</td><td>30 days (intended deletion period)</td></tr>
+  <tr><td>Server logs at our hosting provider</td><td>depends on the hosting service and configuration; no blanket one-day deletion period is confirmed here</td></tr>
 </table>
 
-<p>The 24-month and 30-day periods are enforced by an automated nightly job in our database.</p>
+<p>The intended periods of 24 months for feedback and 30 days for abuse-protection values concern application database records, not separate provider logs.</p>
 
 <h2>8. Your rights</h2>
 
 <p>You have the right to access, rectification, erasure, restriction of processing and data portability, as well as the right to object to processing. Where you have given consent, you may withdraw it at any time with effect for the future.</p>
 
-<p>One limitation you should know about: because Printatops works without an account, we cannot technically identify you. For feedback messages we can only make a match if you give us enough to go on, such as the approximate time and the content. In such cases we do what we can.</p>
+<p>Because Printatops does not create a user account, we cannot automatically match a request to an account. This does not mean that technical identifiers or information you submit cannot allow a match. For feedback, the approximate time and content can help us find the message.</p>
 
 <p>For any request, an email to <a href="mailto:puredevn.io@gmail.com">puredevn.io@gmail.com</a> is enough.</p>
 
@@ -280,9 +283,9 @@
 
 <h2>9. Children</h2>
 
-<p>Printatops is aimed at children and at adults who colour with them. We do not knowingly collect personal information from children.</p>
+<p>Printatops is used by children and adults. On first launch, the app asks for a birth year; you may also choose not to provide one. The device derives and stores a child, adult or unknown status, not the entered year. This is self-declaration, not identity or age verification. Year-based classification is conservative: ages under 18 derived from the stated birth year are treated as child; the year in which someone turns 18 is treated as unknown without a month and day. The status controls advertising and consent treatment, not a different content catalogue.</p>
 
-<p>For users in the United States, the Children’s Online Privacy Protection Act (COPPA) applies. We do not use personalised advertising and we do not share children’s data with third parties for advertising purposes. The feedback form is protected by an arithmetic question so that it is not operated by a child alone.</p>
+<p>For users in the United States, the Children’s Online Privacy Protection Act (COPPA) applies. The app does not allow personalised ads for children or people whose age is unknown. This does not exclude technical data processing by Supabase and Google for content, consent checks, non-personalised ads and security. The feedback form is protected by an arithmetic question; this is not verified parental consent.</p>
 
 <p>If you are a parent or guardian and believe that information about your child has nevertheless reached us, write to us — we will delete it.</p>
 

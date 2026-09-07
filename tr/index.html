@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Gizlilik Politikası &amp; Yasal Bildirim — Printatops</title>
+<meta content="Printatops uygulaması (com.puredevn.printatops) için gizlilik politikası ve yasal bildirim." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --ink:#16202A;
+    --muted:#5A6B78;
+    --paper:#FFFFFF;
+    --surface:#F0F3F5;
+    --rule:#D9E1E6;
+    --accent:#2C6E7F;
+    --accent-soft:#E4EFF2;
+    --sheet-max:44rem;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--surface);
+    color:var(--ink);
+    font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  .sheet{
+    max-width:var(--sheet-max);
+    margin:0 auto;
+    background:var(--paper);
+    padding:clamp(1.75rem,5vw,4rem) clamp(1.25rem,5vw,3.5rem) 4rem;
+    min-height:100vh;
+    box-shadow:0 0 0 1px var(--rule);
+  }
+  header{border-bottom:2px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2rem;}
+  .eyebrow{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:.75rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 .6rem;
+  }
+  h1{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:clamp(1.9rem,6vw,2.7rem);
+    line-height:1.1;
+    margin:0 0 .75rem;
+    letter-spacing:-.01em;
+  }
+  .meta{font-size:.95rem;color:var(--muted);margin:0;}
+  .lang{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-size:.85rem;
+    margin:.75rem 0 0;
+  }
+  h2{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:1.3rem;
+    line-height:1.25;
+    margin:2.75rem 0 .85rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+  }
+  h2:first-of-type{border-top:none;padding-top:0;}
+  h3{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:500;
+    font-size:1.02rem;
+    margin:1.6rem 0 .5rem;
+  }
+  p{margin:0 0 1rem;}
+  ul{margin:0 0 1rem;padding-left:1.15rem;}
+  li{margin-bottom:.55rem;}
+  a{color:var(--accent);}
+  strong{font-weight:600;}
+  .lede{
+    background:var(--accent-soft);
+    border-left:4px solid var(--accent);
+    padding:1.15rem 1.25rem;
+    margin:0 0 2rem;
+  }
+  .lede p:last-child{margin-bottom:0;}
+  .addr{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:500;
+    font-style:normal;
+    line-height:1.55;
+    background:var(--surface);
+    padding:1rem 1.25rem;
+    margin:0 0 1rem;
+  }
+  table{border-collapse:collapse;width:100%;margin:0 0 1.25rem;font-size:.95rem;}
+  th,td{text-align:left;vertical-align:top;padding:.6rem .7rem;border-bottom:1px solid var(--rule);}
+  th{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-weight:700;
+    font-size:.78rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  footer{margin-top:3.5rem;padding-top:1.5rem;border-top:2px solid var(--ink);font-size:.9rem;color:var(--muted);}
+  .print-hint{
+    font-family:"Bricolage Grotesque",system-ui,sans-serif;
+    font-size:.85rem;
+    background:none;
+    border:1px solid var(--rule);
+    color:var(--muted);
+    padding:.5rem .9rem;
+    cursor:pointer;
+    margin-top:1rem;
+  }
+  .print-hint:hover{border-color:var(--accent);color:var(--accent);}
+  .print-hint:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+  @media print{
+    body{background:#fff;font-size:11pt;}
+    .sheet{box-shadow:none;max-width:none;padding:0;}
+    .print-hint,.lang{display:none;}
+    h2{page-break-after:avoid;}
+  }
+</style>
+</head>
+<body>
+<main class="sheet">
+<header>
+<p class="eyebrow">Printatops · com.puredevn.printatops</p>
+<h1>Gizlilik Politikası &amp; Yasal Bildirim</h1>
+<p class="meta">Yayımlandı: 7 Eylül 2026</p>
+<p class="lang"><a href="../">Deutsche Fassung</a></p>
+</header>
+<div class="lede">
+<p><strong>Kısaca:</strong> Printatops'un hesaba veya oturum açmaya ihtiyacı yoktur. Favoriler ve ayarlar yerel olarak depolanır; kataloğun, aramanın, favorilerin ve yazdırmanın sağlanması, Supabase hizmetimize bilgi gönderilmesini de kapsar. İsteğe bağlı geri bildirim ve kötüye kullanım koruma değerleri sunucuda depolanır. Google, rıza kontrolleri ve reklamcılık için cihaz ve ağ verilerini işler. Rıza veren yetişkinler kişiselleştirilmiş reklam alabilir; çocuklar ve yaşı bilinmeyenler almaz.</p>
+</div>
+<h2>1. Kim sorumludur</h2>
+<p>Veri işlemeden sorumlu ve uygulamanın sağlayıcısı:</p>
+<address class="addr">
+  Michael Spiess<br/>
+  Riedmattstrasse 1<br/>
+  6030 Ebikon<br/>
+  Switzerland<br/><br/>
+  Email: <a href="mailto:puredevn.io@gmail.com">puredevn.io@gmail.com</a>
+</address>
+<p>Printatops, "PureDevn Studio" adı altında şahıs şirketi olarak işletilmektedir. Gizlilikle ilgili her türlü soru ve haklarınızı kullanmak için yukarıdaki adrese e-posta göndermeniz yeterlidir.</p>
+<h2>2. Yerel depolama ve gerekli iletim</h2>
+<p>Uygulama aşağıdaki bilgileri yerel olarak depolar. Yerel depolama, tüm işlemlerin cihazda kaldığı anlamına gelmez: favori tanımlayıcıları içeriklerini almak için Supabase'e gönderilir, dil bilgisi katalog, arama, geri bildirim ve yazdırma için gönderilir ve kağıt formatı yazdırma sırasında gönderilir.</p>
+<ul>
+<li>kaydettiğiniz favoriler</li>
+<li>seçilen uygulama dili</li>
+<li>seçilen kağıt formatı</li>
+<li>reklam sıklığını kontrol etmek için bir yazdırma sayacı ve son reklam gösteriminin zamanı</li>
+<li>reklamsız sürümü satın alıp almadığınız</li>
+<li>türetilmiş yaş durumu (çocuk, yetişkin veya bilinmiyor), girilen doğum yılı değil</li>
+</ul>
+<p>Önizleme görselleri aynı zamanda bellekte ve diskte önbelleğe alınır. Yerel uygulama verilerinin silinmesi, daha önce gönderilmiş geri bildirim mesajlarını veya bu politikada adı geçen hizmetlerin elinde bulundurduğu verileri silmez.</p>
+<h2>3. Bize ne gönderilir</h2>
+<h3>Geri bildirim</h3>
+<p>Geri bildirim formu aracılığıyla bize yazarsanız, aşağıdakileri işleriz:</p>
+<ul>
+<li>mesajınızın içeriği</li>
+<li>geri bildirimin türü (geri bildirim veya özellik talebi)</li>
+<li>uygulamada ayarlanan dil</li>
+<li>işlem durumu</li>
+</ul>
+<p>Metin alanına ne yazdığınız size kalmıştır. Açıkça sizden ad, adres veya e-posta adresi girmemenizi — ne kendinizinkini ne de başkasınınkini — talep ediyoruz. Çocukların istemeden bir şey göndermemesi için formun önünde basit bir aritmetik soru yer almaktadır.</p>
+<p><strong>Hukuki dayanak:</strong> formu göndererek verdiğiniz rızanız (Madde 6(1)(a) GDPR). Bunu istediğiniz zaman e-posta yoluyla geri çekebilirsiniz; bu durumda mesajınızı tespit edebildiğimiz ölçüde sileriz.</p>
+<h3>Kötüye kullanım koruması</h3>
+<p>Formu kötüye kullanıma karşı korumak amacıyla, gizli bir ek değer kullanarak IP adresinden kriptografik bir karma elde eder ve bunu bir zaman penceresi ve istek sayacıyla birlikte depolarız. Bu uygulama kayıtları, ham IP adresi yerine karmayı depolar. Barındırma hizmetleri, IP adreslerini ve teknik istek bilgilerini günlüklerinde ayrı olarak işleyebilir. Karma, anonim değil, takma adlıdır.</p>
+<p><strong>Hukuki dayanak:</strong> kötüye kullanıma karşı koyan, işlevsel bir hizmete yönelik meşru menfaatimiz (Madde 6(1)(f) GDPR).</p>
+<h3>Boyama sayfaları ve yazdırma</h3>
+<p>Uygulama ayrıca katalog yüklenirken, arama ve filtreleme yapılırken, kayıtlı favoriler alınırken ve görseller indirilirken Supabase'e istekler gönderir. İşleve bağlı olarak bu istekler arama metnini, filtreleri, dili, sayfa veya favori tanımlayıcılarını ve teknik ağ verilerini içerir. Bu istekler talep edilen içeriği sağlar.</p>
+<p>Bir boyama sayfası yazdırdığınızda, uygulama ilgili yazdırma dosyasını sunucumuzdan talep eder. İletilen veriler; talep edilen sayfanın tanımlayıcısı, kağıt formatı ve dil ayarıdır. Sunucu, sayfanın yayımlanmış olup olmadığını kontrol eder ve beş dakika sonra süresi dolan bir indirme bağlantısı döndürür.</p>
+<p>Yazdırma için kötüye kullanım koruması, IP adresinden türetilmiş bir karma değeri, bir zaman penceresi ve bir istek sayacı saklar. Bu, sayfa tanımlayıcıları içeren özel bir yazdırma geçmişi değildir. Bununla birlikte, talep edilen sayfa tanımlayıcısı sunucuya gönderilir; teknik istek ve barındırma günlükleri ile yerel önizleme önbellekleri bu ayrımın dışında tutulmaz.</p>
+<p><strong>Hukuki dayanak:</strong> talep ettiğiniz işlevi sağlamak (GDPR Madde 6(1)(b)) ve kötüye kullanıma karşı dirençli bir hizmet konusundaki meşru menfaatimiz (GDPR Madde 6(1)(f)).</p>
+<h3>Kullanım analizi yok</h3>
+<p>Eski birinci taraf kullanım olayı özelliği kaldırılmıştır. Bu, hiçbir kullanım verisinin işlenmediği anlamına gelmez: yerel önizleme önbellekleri ve reklam sıklığı için bir yazdırma sayacı, gerekli içerik istekleri ve aşağıda açıklanan Google işlemesi mevcuttur.</p>
+<h2>4. Reklamcılık</h2>
+<p>Printatops, genellikle başarılı bir yazdırmanın ardından Google AdMob reklamları gösterir. Reklamsız sürümü bir kez satın alabilirsiniz.</p>
+<p>Çocuklar, yaşı bilinmeyenler ve kişiselleştirmeye olumlu onay vermemiş yetişkinler <strong>kişiselleştirilmemiş reklamlar</strong> alır — ya da onay denetimi buna izin vermiyorsa hiç reklam almaz. <strong>Onay veren yetişkinler kişiselleştirilmiş reklamlar alabilir.</strong> Uygulama buna yalnızca yetişkin yaş statüsü ve gerekli amaç ile Google satıcı onaylarını içeren Google tarafından sağlanan olumlu bir onay denetimi için izin verir. Eksik veya okunamayan onay verisi kişiselleştirmeye izin vermez. Çocuklar ve yaşı bilinmeyenler için uygulama, Google SDK'nın çocuklara yönelik ve rıza yaşının altında bayraklarını ayarlar; yetişkinler için ayarlamaz. Maksimum reklam içeriği derecelendirmesi herkes için <strong>G (tüm yaşlara uygun)</strong> olarak kalır.</p>
+<p>Kişiselleştirilmemiş reklamcılık veri içermeyen bir süreç değildir. Google, onay denetimleri, reklamcılık, muhasebe, tanılama ve güvenlik amacıyla cihaz ve ağ verilerini işler; ilgili onay alındığında işleme reklam kişiselleştirmesine de hizmet edebilir. Google'a göre potansiyel olarak ilgili veri türleri şunlardır:</p>
+<ul>
+<li>IP adresi, diğer şeylerin yanı sıra yaklaşık konum için</li>
+<li>cihaz ve uygulama tanımlayıcıları, potansiyel olarak Android Advertising ID (AAID) gibi reklam tanımlayıcıları dahil</li>
+<li>gösterimler ve tıklamalar gibi reklamla etkileşimler</li>
+<li>tanılama ve hata verileri</li>
+</ul>
+<p>Google bu işlemeden bağımsız olarak sorumludur. Ayrıntılar <a href="https://policies.google.com/privacy" rel="noopener">Google'ın gizlilik politikasında</a> yer almaktadır.</p>
+<h3>AEA, İsviçre ve Birleşik Krallık'ta onay</h3>
+<p>Reklamlar yüklenmeden önce uygulama, reklam isteklerine izin verilip verilmediğini kontrol etmek için Google UMP'yi kullanır ve yaş durumuna ile UMP sonucuna bağlı olarak bir onay formu gösterir. Onay seçimi yerel olarak saklanır ve Google SDK'ları tarafından kullanılır. Onay denetiminin kendisi Google'a teknik veri gönderir; Supabase'e içerik istekleri yaş ekranından sonra ve reklam onayından önce de gerçekleşebilir. Reddetmek, hiçbir cihaz veya diğer tanımlayıcıların işlenmediğinin garantisi değildir. Onay denetiminden izin alınmadan uygulama hiç reklam yüklemez. Google UMP bu giriş noktasını gerektirdiğinde yetişkinler, ayarlardan reklam gizlilik seçeneklerini yeniden açabilir; bu yetişkine yönelik giriş noktası çocuklar veya yaşı bilinmeyenler için sunulmaz.</p>
+<p><strong>Hukuki dayanak:</strong> cihazınıza erişildiği durumlarda rızanız (GDPR Madde 6(1)(a)); aksi takdirde ücretsiz uygulamayı finanse etme konusundaki meşru menfaatimiz (GDPR Madde 6(1)(f)).</p>
+<h2>5. Satın Almalar</h2>
+<p>Reklamsız sürümün tek seferlik satın alımı Google Play üzerinden gerçekleştirilir. Uygulama ürün, satın alma ve işlem bilgilerini işler ve satın alma durumunu yerel olarak saklar; kendi ödeme formu aracılığıyla ödeme ayrıntılarını toplamaz. Satın almadan önce sorulan bir aritmetik soru ek bir engel niteliğindedir, doğrulanmış ebeveyn onayı değildir. Ödeme işleme için Google Play'in şartları ve gizlilik politikası geçerlidir.</p>
+<h2>6. Alıcılar ve uluslararası aktarımlar</h2>
+<table>
+<tr><th>Alıcı</th><th>Amaç</th><th>İşleme yeri</th></tr>
+<tr>
+<td>Supabase</td>
+<td>Barındırma, veritabanı, dosya depolama, sunucu işlevleri</td>
+<td>eu-west-1 (Ireland, EU)</td>
+</tr>
+<tr>
+<td>Google (AdMob, Google Play)</td>
+<td>Onay denetimleri, onay veren yetişkinler için olası kişiselleştirme dahil reklamcılık, ödeme işleme</td>
+<td>Amerika Birleşik Devletleri ve diğer ülkeler</td>
+</tr>
+</table>
+<p>Veriler İsviçre ve Avrupa Ekonomik Alanı dışındaki ülkelere aktarıldığında, ilgili ülke için mevcut olmaları halinde Avrupa Komisyonu'nun standart sözleşme maddelerine ve yeterlilik kararlarına dayanırız.</p>
+<h2>7. Verileri ne kadar süre saklarız</h2>
+<table>
+<tr><th>Veri</th><th>Saklama süresi</th></tr>
+<tr><td>Yerel uygulama depolamasındaki bilgiler</td><td>orada değiştirilene veya silinene kadar; bu, ayrı yedeklerin veya dışa aktarılan dosyaların silinmesini garanti etmez</td></tr>
+<tr><td>Geri bildirim mesajları</td><td>24 ay (hedeflenen silme süresi)</td></tr>
+<tr><td>Kötüye kullanım koruma karmaları</td><td>30 gün (hedeflenen silme süresi)</td></tr>
+<tr><td>Barındırma sağlayıcımızdaki sunucu günlükleri</td><td>barındırma hizmetine ve yapılandırmaya bağlıdır; burada genel bir tek günlük silme süresi teyit edilmemektedir</td></tr>
+</table>
+<p>Geri bildirim için 24 ay ve kötüye kullanım koruma değerleri için 30 günlük hedeflenen süreler, ayrı sağlayıcı günlüklerini değil, uygulama veritabanı kayıtlarını kapsar.</p>
+<h2>8. Haklarınız</h2>
+<p>Erişim, düzeltme, silme, işlemenin kısıtlanması ve veri taşınabilirliği haklarına ve ayrıca işlemeye itiraz etme hakkına sahipsiniz. Rıza vermiş olduğunuz durumlarda, bunu gelecek için etkili olmak üzere istediğiniz zaman geri çekebilirsiniz.</p>
+<p>Printatops bir kullanıcı hesabı oluşturmadığından, bir talebi otomatik olarak bir hesapla eşleştiremeyiz. Bu, gönderdiğiniz teknik tanımlayıcıların veya bilgilerin bir eşleşmeye olanak tanıyamayacağı anlamına gelmez. Geri bildirimler için yaklaşık zaman ve içerik, mesajı bulmamıza yardımcı olabilir.</p>
+<p>Herhangi bir talep için <a href="mailto:puredevn.io@gmail.com">puredevn.io@gmail.com</a> adresine e-posta göndermek yeterlidir.</p>
+<h3>Denetleyici makamlar</h3>
+<ul>
+<li><strong>İsviçre:</strong> Federal Veri Koruma ve Bilgi Komiseri (FDPIC), Bern</li>
+<li><strong>Avrupa Ekonomik Alanı:</strong> ikamet ettiğiniz ülkenin veri koruma otoritesi</li>
+</ul>
+<h2>9. Çocuklar</h2>
+<p>Printatops çocuklar ve yetişkinler tarafından kullanılmaktadır. İlk açılışta uygulama bir doğum yılı ister; bunu vermemeyi de tercih edebilirsiniz. Cihaz, girilen yılı değil, çocuk, yetişkin veya bilinmiyor durumunu türetir ve saklar. Bu bir öz-beyan olup kimlik veya yaş doğrulaması değildir. Yıl bazlı sınıflandırma ihtiyatlıdır: belirtilen doğum yılından türetilen 18 yaş altı yaşlar çocuk olarak değerlendirilir; birinin 18 yaşına girdiği yıl, ay ve gün olmaksızın bilinmiyor olarak değerlendirilir. Durum, farklı bir içerik kataloğunu değil, reklamcılık ve rıza işlemini kontrol eder.</p>
+<p>Amerika Birleşik Devletleri'ndeki kullanıcılar için Çocukların Çevrimiçi Gizliliğini Koruma Yasası (COPPA) geçerlidir. Uygulama, çocuklar veya yaşı bilinmeyen kişiler için kişiselleştirilmiş reklamlara izin vermez. Bu, içerik, rıza kontrolleri, kişiselleştirilmemiş reklamlar ve güvenlik için Supabase ve Google tarafından gerçekleştirilen teknik veri işlemesini dışlamaz. Geri bildirim formu aritmetik bir soruyla korunmaktadır; bu, doğrulanmış ebeveyn rızası değildir.</p>
+<p>Ebeveyn veya vasi iseniz ve çocuğunuza ait bilgilerin yine de bize ulaştığına inanıyorsanız, bize yazın — sileceğiz.</p>
+<h2>10. Bu politikadaki değişiklikler</h2>
+<p>Bu politikayı uygulama veya hukuki durum değiştiğinde güncelleriz. Bu sayfada yayımlanan sürüm geçerli olan sürümdür. Mevcut sürümün tarihi en üstte gösterilmektedir.</p>
+<button class="print-hint" onclick="window.print()">Bu sayfayı yazdır</button>
+<footer>
+<p>Printatops · com.puredevn.printatops · Michael Spiess, Ebikon (Switzerland)</p>
+</footer>
+</main>
+</body>
+</html>

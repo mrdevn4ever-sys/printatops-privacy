@@ -145,12 +145,12 @@
 <header>
   <p class="eyebrow">Printatops · com.puredevn.printatops</p>
   <h1>Datenschutz &amp; Impressum</h1>
-  <p class="meta">Fassung 1.0 · Stand: 27. Juli 2026</p>
+  <p class="meta">Veröffentlicht: 7. September 2026</p>
   <p class="lang"><a href="en/">English version</a></p>
 </header>
 
 <div class="lede">
-  <p><strong>Kurz gesagt:</strong> Printatops braucht kein Konto und keine Anmeldung. Deine Favoriten und Einstellungen bleiben auf deinem Gerät. An uns gelangen nur Daten, wenn du uns aktiv Feedback schickst. Zusätzlich wird Werbung von Google AdMob ausgeliefert, die dabei technische Geräte- und Netzwerkdaten verarbeitet.</p>
+  <p><strong>Kurz gesagt:</strong> Printatops braucht kein Konto und keine Anmeldung. Favoriten und Einstellungen werden lokal gespeichert; zur Bereitstellung von Katalog, Suche, Favoriten und Druck werden auch Angaben an unseren Supabase-Dienst übertragen. Optionales Feedback und Werte zum Missbrauchsschutz werden serverseitig gespeichert. Google verarbeitet für Einwilligungsprüfung und Werbung Geräte- und Netzwerkdaten. Erwachsene, die zustimmen, können personalisierte Werbung erhalten; Kinder und Personen mit unbekanntem Alter nicht.</p>
 </div>
 
 <h2>1. Verantwortlicher und Impressum</h2>
@@ -167,19 +167,20 @@
 
 <p>Printatops wird als Einzelunternehmen unter der Bezeichnung „PureDevn Studio“ betrieben. Für alle Fragen zum Datenschutz und für die Ausübung deiner Rechte genügt eine E-Mail an die oben genannte Adresse.</p>
 
-<h2>2. Was auf deinem Gerät bleibt</h2>
+<h2>2. Lokale Speicherung und notwendige Übertragung</h2>
 
-<p>Die folgenden Angaben speichert die App ausschliesslich lokal auf deinem Gerät. Sie werden nicht an uns übermittelt und sind für uns nicht einsehbar:</p>
+<p>Die App speichert folgende Angaben lokal. Lokale Speicherung bedeutet nicht, dass alle Angaben ausschliesslich auf dem Gerät verarbeitet werden: Favoriten-Kennungen werden zur Inhaltsauflösung, die Sprache für Katalog, Suche, Feedback und Druck sowie das Papierformat beim Druck an Supabase übertragen.</p>
 
 <ul>
   <li>deine gespeicherten Favoriten</li>
   <li>die gewählte App-Sprache</li>
   <li>das gewählte Papierformat</li>
-  <li>ein Zähler, wie oft Werbung eingeblendet wurde</li>
+  <li>ein Druckzähler und der Zeitpunkt der letzten Werbeeinblendung zur Steuerung der Werbehäufigkeit</li>
   <li>die Information, ob du die werbefreie Version gekauft hast</li>
+  <li>der abgeleitete Altersstatus (Kind, erwachsen oder unbekannt), nicht das eingegebene Geburtsjahr</li>
 </ul>
 
-<p>Wenn du die App löschst, verschwinden diese Angaben mit ihr.</p>
+<p>Vorschaubilder werden ausserdem im Arbeitsspeicher und im Datei-Cache zwischengespeichert. Das Löschen lokaler App-Daten löscht keine bereits übermittelten Feedback-Nachrichten oder Daten bei den genannten Diensten.</p>
 
 <h2>3. Was an uns übermittelt wird</h2>
 
@@ -200,11 +201,13 @@
 
 <h3>Schutz vor Missbrauch</h3>
 
-<p>Damit das Formular nicht massenhaft missbraucht wird, bilden wir aus der IP-Adresse deines Geräts einen kryptografischen Hashwert mit einem geheimen Zusatzwert und speichern diesen zusammen mit einem Zeitfenster. Die IP-Adresse selbst speichern wir nicht. Der Hashwert ist kein anonymer, sondern ein pseudonymer Wert — wir behandeln ihn deshalb als personenbezogenes Datum.</p>
+<p>Damit das Formular nicht massenhaft missbraucht wird, bilden wir aus der IP-Adresse einen kryptografischen Hashwert mit einem geheimen Zusatzwert und speichern diesen zusammen mit einem Zeitfenster und Anfragezähler. In diesen Anwendungsdatensätzen wird der Hashwert statt der rohen IP-Adresse gespeichert. Hosting-Dienste können unabhängig davon IP-Adressen und technische Anfrageinformationen in ihren Logs verarbeiten. Der Hashwert ist pseudonym, nicht anonym.</p>
 
 <p><strong>Rechtsgrundlage:</strong> unser berechtigtes Interesse an einem funktionsfähigen, missbrauchssicheren Dienst (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
 <h3>Ausmalseiten und Druck</h3>
+
+<p>Auch beim Laden des Katalogs, bei Suche und Filtern, beim Auflösen gespeicherter Favoriten und beim Abrufen von Bildern sendet die App Anfragen an Supabase. Dazu gehören je nach Funktion Suchtext, Filter, Sprache, Seiten- oder Favoriten-Kennungen sowie technische Netzwerkdaten. Diese Übertragung dient der Bereitstellung der angeforderten Inhalte.</p>
 
 <p>Beim Drucken einer Ausmalseite fragt die App die zugehörige
 Druckdatei bei unserem Server an. Übermittelt werden dabei die
@@ -213,11 +216,7 @@ eingestellte Sprache. Der Server prüft, ob die Seite freigegeben
 ist, und schickt einen Downloadlink zurück, der nach fünf Minuten
 verfällt.</p>
 
-<p>Zum Schutz vor Missbrauch bilden wir dabei — wie beim
-Feedback-Formular — einen Hashwert aus der IP-Adresse deines
-Geräts und speichern ihn zusammen mit einem Zeitfenster. Die
-IP-Adresse selbst speichern wir nicht. <strong>Welche Seite du
-druckst, wird nicht gespeichert.</strong></p>
+<p>Zum Missbrauchsschutz beim Druck speichern wir einen aus der IP-Adresse abgeleiteten Hashwert, ein Zeitfenster und einen Anfragezähler. Das ist keine eigene Druckhistorie mit Seitenkennungen. Die angeforderte Seitenkennung wird jedoch an den Server übertragen; technische Anfrage- und Hosting-Logs sowie lokale Vorschau-Caches sind von dieser Aussage nicht ausgeschlossen.</p>
 
 <p><strong>Rechtsgrundlage:</strong> Bereitstellung der von dir
 angeforderten Funktion (Art. 6 Abs. 1 lit. b DSGVO) sowie unser
@@ -226,19 +225,19 @@ berechtigtes Interesse an einem missbrauchssicheren Dienst
 
 <h3>Keine Nutzungsstatistik</h3>
 
-<p>Frühere Versionen der App haben anonymisierte Nutzungsereignisse erfasst. Diese Funktion wurde vollständig entfernt, die zugehörigen Daten wurden gelöscht. Printatops erfasst keine Statistiken darüber, welche Seiten du ansiehst, druckst oder als Favorit speicherst.</p>
+<p>Die frühere Funktion für eigene Nutzungsereignisse wurde entfernt. Das bedeutet nicht, dass keinerlei Nutzungsdaten verarbeitet werden: Es gibt lokale Vorschau-Caches und einen Druckzähler zur Werbesteuerung, notwendige Inhaltsanfragen sowie die unten beschriebene Verarbeitung durch Google.</p>
 
 <h2>4. Werbung</h2>
 
 <p>Printatops blendet Werbung von Google AdMob ein, in der Regel nach einem erfolgreichen Druckvorgang. Die werbefreie Version kannst du einmalig kaufen.</p>
 
-<p>Wir haben AdMob so eingestellt, dass ausschliesslich <strong>nicht personalisierte Werbung</strong> ausgeliefert wird, die App als <strong>an Kinder gerichtet</strong> gekennzeichnet ist und nur Werbung der Alterseinstufung <strong>G (für alle Altersgruppen)</strong> zugelassen wird. Es wird kein Werbeprofil über dich gebildet.</p>
+<p>Kinder, Personen mit unbekanntem Alter und Erwachsene ohne positive Einwilligung zur Personalisierung erhalten <strong>nicht personalisierte Werbung</strong> — oder keine Werbung, wenn die Einwilligungsprüfung keine Anzeigen erlaubt. <strong>Erwachsene, die zustimmen, können personalisierte Werbung erhalten.</strong> Die App erlaubt dies nur bei einem als erwachsen eingestuften Altersstatus und einer positiven, von Google bereitgestellten Einwilligungsprüfung einschliesslich der erforderlichen Zweck- und Google-Anbietereinwilligungen. Fehlende oder nicht lesbare Einwilligungsdaten erlauben keine Personalisierung. Für Kinder und unbekanntes Alter setzt die App die Kinderschutz- und Minderjährigenkennzeichnungen der Google-SDKs, für Erwachsene nicht. Für alle bleibt die maximale Anzeigen-Alterseinstufung <strong>G (für alle Altersgruppen)</strong> gesetzt.</p>
 
-<p>Das bedeutet aber nicht, dass keine Daten verarbeitet werden. Google verarbeitet für die Auslieferung und Abrechnung von Werbung nach eigenen Angaben insbesondere:</p>
+<p>Auch nicht personalisierte Werbung ist nicht datenfrei. Google verarbeitet Geräte- und Netzwerkdaten für Einwilligungsprüfung, Werbung, Abrechnung, Diagnose und Sicherheit; bei entsprechender Einwilligung kann die Verarbeitung auch der Personalisierung von Werbung dienen. Nach Googles Angaben gehören zu den grundsätzlich relevanten Datenarten:</p>
 
 <ul>
   <li>die IP-Adresse, unter anderem zur groben Standortbestimmung</li>
-  <li>Geräte- und App-Kennungen</li>
+  <li>Geräte- und App-Kennungen, gegebenenfalls auch Werbekennungen wie die Android Advertising ID (AAID)</li>
   <li>Interaktionen mit der Werbung, etwa Einblendungen und Klicks</li>
   <li>Diagnose- und Fehlerdaten</li>
 </ul>
@@ -247,13 +246,13 @@ berechtigtes Interesse an einem missbrauchssicheren Dienst
 
 <h3>Einwilligung im Europäischen Wirtschaftsraum, in der Schweiz und im Vereinigten Königreich</h3>
 
-<p>Bevor Werbung geladen wird, zeigt dir die App einen Dialog von Google, in dem du über die Datenverarbeitung informiert wirst und entscheiden kannst. Deine Entscheidung wird auf dem Gerät gespeichert. Wenn du nicht zustimmst, wird eingeschränkte Werbung ohne Zugriff auf Gerätekennungen ausgeliefert. Du kannst deine Entscheidung in den Einstellungen der App jederzeit ändern.</p>
+<p>Vor dem Laden von Werbung prüft die App mit Google UMP, ob Anzeigen angefordert werden dürfen, und zeigt je nach Altersstatus und UMP-Ergebnis ein Einwilligungsformular. Die Einwilligungsentscheidung wird lokal gespeichert und von den Google-SDKs berücksichtigt. Schon die Einwilligungsprüfung überträgt technische Daten an Google; auch Inhaltsanfragen an Supabase können nach Abschluss der Altersabfrage vor einer Werbeeinwilligung erfolgen. Ablehnung ist keine Garantie, dass keine Geräte- oder sonstigen Kennungen verarbeitet werden. Ohne Freigabe der Einwilligungsprüfung lädt die App keine Anzeigen. Erwachsene können die Werbe-Datenschutzoptionen in den Einstellungen erneut öffnen, wenn Google UMP diesen Einstieg verlangt; für Kinder und unbekanntes Alter wird dieser Erwachsenen-Einstieg nicht angeboten.</p>
 
 <p><strong>Rechtsgrundlage:</strong> deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), soweit ein Zugriff auf dein Endgerät stattfindet; im Übrigen unser berechtigtes Interesse an der Finanzierung der kostenlosen App (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
 <h2>5. Käufe</h2>
 
-<p>Der einmalige Kauf der werbefreien Version wird vollständig über Google Play abgewickelt. Wir erhalten weder deine Zahlungsdaten noch deinen Namen — die App erfährt lediglich, ob ein gültiger Kauf vorliegt. Vor dem Kauf steht eine Rechenaufgabe, die verhindern soll, dass Kinder ohne Zutun der Eltern etwas kaufen. Für die Zahlungsabwicklung gelten die Bedingungen und die Datenschutzerklärung von Google Play.</p>
+<p>Der einmalige Kauf der werbefreien Version wird über Google Play abgewickelt. Die App verarbeitet dafür Produkt-, Kauf- und Transaktionsinformationen und speichert den Kaufstatus lokal; sie erhebt keine Zahlungsdaten über ein eigenes Zahlungsformular. Vor dem Kauf steht eine Rechenaufgabe als zusätzliche Hürde, nicht als verifizierte elterliche Zustimmung. Für die Zahlungsabwicklung gelten die Bedingungen und die Datenschutzerklärung von Google Play.</p>
 
 <h2>6. Empfänger und Übermittlung ins Ausland</h2>
 
@@ -266,7 +265,7 @@ berechtigtes Interesse an einem missbrauchssicheren Dienst
   </tr>
   <tr>
     <td>Google (AdMob, Google Play)</td>
-    <td>Werbung, Kaufabwicklung</td>
+    <td>Einwilligungsprüfung, Werbung einschliesslich möglicher Personalisierung für einwilligende Erwachsene, Kaufabwicklung</td>
     <td>USA und weitere Länder</td>
   </tr>
 </table>
@@ -277,17 +276,19 @@ berechtigtes Interesse an einem missbrauchssicheren Dienst
 
 <table>
   <tr><th>Daten</th><th>Dauer</th></tr>
-  <tr><td>Angaben auf deinem Gerät</td><td>bis du sie änderst oder die App löschst</td></tr>
-  <tr><td>Feedback-Nachrichten</td><td>24 Monate</td></tr>
-  <tr><td>Hashwerte zum Missbrauchsschutz</td><td>30 Tage</td></tr>
-  <tr><td>Server-Logs beim Hosting-Anbieter</td><td>1 Tag (Supabase Free Plan)</td></tr>
+  <tr><td>Angaben im lokalen App-Speicher</td><td>bis sie dort geändert oder gelöscht werden; keine Zusage zur Löschung gesonderter Backups oder exportierter Dateien</td></tr>
+  <tr><td>Feedback-Nachrichten</td><td>24 Monate (vorgesehene Löschfrist)</td></tr>
+  <tr><td>Hashwerte zum Missbrauchsschutz</td><td>30 Tage (vorgesehene Löschfrist)</td></tr>
+  <tr><td>Server-Logs beim Hosting-Anbieter</td><td>abhängig vom Hosting-Dienst und der Konfiguration; keine hier bestätigte pauschale Ein-Tages-Löschfrist</td></tr>
 </table>
+
+<p>Die vorgesehenen Fristen von 24 Monaten für Feedback und 30 Tagen für Missbrauchsschutzwerte betreffen die Anwendungsdatenbank, nicht gesonderte Logs der Anbieter.</p>
 
 <h2>8. Deine Rechte</h2>
 
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Bearbeitung, Datenübertragbarkeit sowie das Recht, einer Bearbeitung zu widersprechen. Hast du eine Einwilligung erteilt, kannst du sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
 
-<p>Eine Einschränkung solltest du kennen: Da Printatops ohne Konto funktioniert, können wir dich technisch nicht identifizieren. Bei Feedback-Nachrichten können wir eine Zuordnung nur vornehmen, wenn du uns genug Anhaltspunkte gibst, etwa den ungefähren Zeitpunkt und den Inhalt. Wir tun in diesen Fällen, was uns möglich ist.</p>
+<p>Da Printatops kein Benutzerkonto anlegt, können wir eine Anfrage nicht automatisch einem Konto zuordnen. Das bedeutet nicht, dass technische Kennungen oder von dir übermittelte Angaben keine Zuordnung ermöglichen können. Bei Feedback helfen uns etwa der ungefähre Zeitpunkt und der Inhalt, die Nachricht zu finden.</p>
 
 <p>Für alle Anliegen genügt eine E-Mail an <a href="mailto:puredevn.io@gmail.com">puredevn.io@gmail.com</a>.</p>
 
@@ -300,9 +301,9 @@ berechtigtes Interesse an einem missbrauchssicheren Dienst
 
 <h2>9. Kinder</h2>
 
-<p>Printatops richtet sich an Kinder und an Erwachsene, die mit Kindern ausmalen. Wir erheben wissentlich keine personenbezogenen Daten von Kindern.</p>
+<p>Printatops wird von Kindern und Erwachsenen genutzt. Beim ersten Start fragt die App nach dem Geburtsjahr; keine Angabe ist ebenfalls möglich. Daraus wird auf dem Gerät ein Status als Kind, erwachsen oder unbekannt abgeleitet und gespeichert, nicht das eingegebene Jahr. Dies ist eine Selbstauskunft, keine Identitäts- oder Altersverifikation. Die Jahreseinstufung ist konservativ: Aus dem angegebenen Geburtsjahr abgeleitete Alterswerte unter 18 werden als Kind eingestuft; das 18er-Grenzjahr ohne Monat und Tag wird als unbekannt behandelt. Der Status steuert die Werbe- und Einwilligungsbehandlung, nicht einen anderen Inhaltskatalog.</p>
 
-<p>Für Nutzerinnen und Nutzer in den Vereinigten Staaten gilt der Children's Online Privacy Protection Act (COPPA). Wir setzen keine personalisierte Werbung ein und geben keine Daten von Kindern zu Werbezwecken an Dritte weiter. Das Feedback-Formular ist durch eine Rechenaufgabe geschützt, damit es nicht von Kindern allein bedient wird.</p>
+<p>Für Nutzerinnen und Nutzer in den Vereinigten Staaten gilt der Children’s Online Privacy Protection Act (COPPA). Für Kinder und Personen mit unbekanntem Alter erlaubt die App keine personalisierte Werbung. Das schliesst technische Datenverarbeitung durch Supabase und Google für Inhalte, Einwilligungsprüfung, nicht personalisierte Werbung und Sicherheit nicht aus. Das Feedback-Formular ist durch eine Rechenaufgabe geschützt; diese ist keine verifizierte elterliche Zustimmung.</p>
 
 <p>Wenn du Elternteil oder Erziehungsberechtigte bist und vermutest, dass uns dennoch Angaben deines Kindes erreicht haben, schreib uns — wir löschen sie.</p>
 
